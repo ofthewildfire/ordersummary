@@ -1,0 +1,128 @@
+:root {
+  --PaleBlue: #e0e8ff;
+  --BrightBlue: #3829e0;
+  --VeryPaleBlue: #f5f7ff;
+  --DesaturatedBlue: #7280a7;
+  --DarkBlue: #1f2f56;
+  --PrimaryFont: 'Red Hat Display', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: var(--PrimaryFont);
+}
+
+.card-component,
+.plan-component,
+.sign-up-component {
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: var(--VeryPaleBlue);
+}
+
+/* Order--Summary */
+
+.card-bg-image {
+  background-image: url(/images/illustration-hero.svg);
+  padding: 70px 0;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-component {
+  text-align: center;
+}
+
+.card-component h1 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: var(--DarkBlue);
+}
+
+.card-component p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 0 1em;
+  color: var(--DesaturatedBlue);
+}
+
+/* Plan-- Section */
+
+.plan-component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em 0;
+  /* background: var(--PaleBlue);
+  border-radius: 10px; */
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li:first-child {
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+li:nth-child(2) {
+  color: #7280a7;
+}
+
+.plan-component a {
+  font-weight: 700;
+  color: blue;
+}
+
+/* Payment Section */
+
+.sign-up-component {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sign-up-component button {
+  display: block;
+  margin: 0 auto;
+  padding: .75em 2em;
+  background: #3829e0;
+  color: #e0e8ff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-family: inherit;
+  box-shadow: 5px 5px 15px #7280a7;
+}
+
+.sign-up-component p {
+  text-align: center;
+  padding: 1em 0 2em 0;
+  font-weight: 900;
+  color: #7280a7;
+}
+
+@media (min-width: 700px) {
+  body {
+    background: url(/images/pattern-background-desktop.svg);
+    background-size: cover
+  }
+}
