@@ -61,17 +61,17 @@ p {
   background-color: var(--VeryPaleBlue);
   border-radius: 10px;
   display: flex;
-  padding: .3em 0;
+  padding: .2em 0;
   font-size: 1.2rem;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 1.5em auto 0 auto;
-  width: 90%;
+  width: 85%;
 }
 
 ul {
   list-style: none;
   text-align: left;
-  padding-left: 0;
+  padding-left: 1em;
 }
 
 li:first-child {
@@ -89,6 +89,16 @@ li:nth-child(2) {
   font-size: .95rem;
 }
 
+.plan a:hover {
+  text-decoration: none;
+  color: var(--DesaturatedBlue);
+}
+
+.annual-plan {
+  display: flex;
+  align-items: center;
+}
+
 button {
   background-color: var(--BrightBlue);
   border: none;
@@ -104,12 +114,22 @@ button {
   padding: 1em 4.5em;
 }
 
+button:hover {
+  background-color: var(--DesaturatedBlue);
+  cursor: pointer;
+}
+
 small {
   color: var(--DesaturatedBlue);
   display: inline-block;
   font-size: 1.1rem;
   font-weight: 900;
   padding: 0 0 1.5em 0;
+}
+
+small:hover {
+  cursor: pointer;
+  color: var(--DarkBlue);
 }
 
 @media (min-width: 550px) {
