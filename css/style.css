@@ -15,8 +15,9 @@ html {
 
 body {
   align-items: center;
-  background-image: url(/images/pattern-background-mobile.svg);
-  background-size: cover;
+  background: url(./images/pattern-background-mobile.svg), #E1E9Ff;
+  background-repeat: no-repeat, no-repeat;
+  /* background-size: cover; */
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -133,9 +134,9 @@ small:hover {
 }
 
 @media (min-width: 550px) {
-  body {
-    background-color: var(--PaleBlue);
-    background-image: url(/images/pattern-background-desktop.svg);
-    background-size: cover;
+    body {
+      background: url(./images/pattern-background-desktop.svg), #E1E9Ff;
+      background-repeat: no-repeat, no-repeat;
   }
+
 }
